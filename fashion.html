@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aktiv-grotesk"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yiwen Yang - Fashion</title>
+    </head>
+    <body>
+        <header>
+            <div class="skip"><a href="#skipto">Skip to Content</a></div>
+            <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="myLinks">
+                <a class="notcurrent"href="index.html">Home</a>
+                <a class="notcurrent"href="architecture.html">Architecture</a>
+                <a class="current" href="fashion.html">Fashion</a>
+                <a class="notcurrent"href="graphics.html">Graphics</a>
+                <a class="notcurrent"href="aboutme.html">About Me</a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        <main>
+            <div class="intro_fash">
+                <h1>FASHION</h1>
+                <p>This is the gallery of Fashion design that I like. In this website, I divide the design pieces with genders. So there are three categories: Men, Women and Unisex. </p>
+            </div>
+            <div class="pagelink2" id="skipto">
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+                <a href="#unisex">Unisex</a>
+            </div>
+            <div id="men">
+                <h2>Men</h2>
+                <img id="menpic1"src="images/givenchy.jpeg" alt=""/>
+                <div id="mentext1">
+                    <p>Givenchy SPRING 2022 - The model is my favorite.
+                </div>
+                <img id="menpic2"src="images/valentino.jpeg" alt=""/>
+                <div id="mentext2">
+                    <p>Valentino SPRING 2022 - Asian models matter!</p>
+                </div>
+                <img id="menpic3"src="images/balenciaga.jpeg" alt=""/>
+                <div id="mentext3">
+                    <p>Balenciaga SPRING 2022 - Like how Elliot Page is rocking men's clothes.</p>
+                </div>
+            </div>
+            <div id="women">
+                <h2>Women</h2>
+                <img id="womenpic1"src="images/commespr22.jpeg" alt=""/>
+                <div id="womentext1">
+                    <p>Comme Des Garcons SPRING 2022 - The color is dreamy.</p>
+                </div>
+                <img id="womenpic2"src="images/chanelspr22.jpeg" alt=""/>
+                <div id="womentext2">
+                    <p>Chanel SPRING 2022 - That is what we call classy.</p>
+                </div>
+                <img id="womenpic3"src="images/mcqueenspr22.jpeg" alt=""/>
+                <div id="womentext3">
+                    <p>Alexander McQueen SPRING 2022 - Like the structure of this clothes!</p>
+                </div>
+            </div>
+            <div id="unisex">
+                <h2>Unisex</h2>
+                <img id="unisexpic1"src="images/guccispr22.jpeg" alt=""/>
+                <div id="unisextext1">
+                    <p>GUCCI SPRING 2022 - Everyone can be top free.</p>
+                </div>
+                <img id="unisexpic2"src="images/miumiuspr22.jpeg" alt=""/>
+                <div id="unisextext2">
+                    <p>MIU MIU SPRING 2022 - Those croptops are so popular in USA.</p>
+                </div>
+                <img id="unisexpic3"src="images/yohjiyamamoto.jpeg" alt=""/>
+                <div id="unisextext3">
+                    <p>Yohji Yamamoto SPRING 2022 - Black is immortal.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="name">Yiwen Yang</p>
+            <p id="address">540 Thompson St.</p>
+            <p id="city">Ann Arbor, MI</p>
+            <p id="number">(734)450-5022</p>
+            <p id="email">yiwyang@umich.edu</p>
+        </footer>
+    </body>
+</html>

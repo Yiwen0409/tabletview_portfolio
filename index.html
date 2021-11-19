@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aktiv-grotesk"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yiwen Yang's Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="skip"><a href="#skipto">Skip to Content</a></div>
+            <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav id="myLinks">
+                <a class="current" href="index.html">Home</a>
+                <a class="notcurrent"href="architecture.html">Architecture</a>
+                <a class="notcurrent"href="fashion.html">Fashion</a>
+                <a class="notcurrent"href="graphics.html">Graphics</a>
+                <a class="notcurrent"href="aboutme.html">About Me</a>
+            </nav>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        <main>
+            <div class="introduction">
+                <h1>INTRODUCTION</h1>
+                <p>Hi! Welcome to Yiwen Yang's personal website. This website is a display of my favorite art pieces, which are divided into three categories: Architecture, Fashion and Graphics. I hope you enjoy it! </p>
+            </div>
+            <div class="architecture" id="skipto">
+                <h2>Architecture</h2>
+                <div class="archpics">
+                    <img id="image1.1" src="images/luisvitton.jpeg" alt="" />
+                    <img id="image1.2" src="images/vessel.jpeg" alt="" />
+                    <img id="image1.3" src="images/harbin.jpeg" alt="" />
+                </div>
+                <a href="architecture.html">More Architecture</a>
+            </div>
+            <div class="fashion">
+                <h2>Fashion</h2>
+                <div class="fashpics">
+                    <img id="image2.1" src="images/givenchy.jpeg" alt="" />
+                    <img id="image2.2" src="images/guccispr22.jpeg" alt="" />
+                    <img id="image2.3" src="images/mcqueenspr22.jpeg" alt="" />
+                </div>
+                <a href="fashion.html">More Fashion</a>
+            </div>
+            <div class="graphics">
+                <h2>Graphics</h2>
+                <div class="grappics">
+                    <img id="image3.1" src="images/poster.jpeg" alt="" />
+                    <img id="image3.2" src="images/web.jpeg" alt="" />
+                    <img id="image3.3" src="images/typography.jpeg" alt="" />
+                </div>
+                <a href="graphics.html">More Graphics</a>
+            </div>
+        </main>
+        <footer>
+            <p id="name">Yiwen Yang</p>
+            <p id="address">540 Thompson St.</p>
+            <p id="city">Ann Arbor, MI</p>
+            <p id="number">(734)450-5022</p>
+            <p id="email">yiwyang@umich.edu</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aktiv-grotesk"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yiwen Yang - About Me</title>
+    </head>
+    <body>
+        <header>
+            <div class="skip"><a href="#skipto">Skip to Content</a></div>
+            <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="myLinks">
+                <a class="notcurrent"href="index.html">Home</a>
+                <a class="notcurrent"href="architecture.html">Architecture</a>
+                <a class="notcurrent"href="fashion.html">Fashion</a>
+                <a class="notcurrent"href="graphics.html">Graphics</a>
+                <a class="current" href="aboutme.html">About Me</a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        <main>
+            <div class="myprofile" id="skipto">
+                <img src="images/profile.jpeg" alt=""/>
+                <h1>About Me</h1>
+                <div class="information">
+                    <p><em>Name:</em> Yiwen Yang</p>
+                    <p><em>Date of Birth:</em> 04/09/1997</p>
+                    <p><em>Pronounce:</em> He/Him/They/Them</p>
+                    <p><em>Location:</em> Ann Arbor, MI</p>
+                    <p><em>Background:</em> UX Design/Architecture</p>
+                    <p><em>Hobby:</em> Art/Music/Movies/Games/Technology/Pets/Bars/<br>Traveling</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="name">Yiwen Yang</p>
+            <p id="address">540 Thompson St.</p>
+            <p id="city">Ann Arbor, MI</p>
+            <p id="number">(734)450-5022</p>
+            <p id="email">yiwyang@umich.edu</p>
+        </footer>
+    </body>
+</html>

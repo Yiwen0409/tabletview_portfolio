@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aktiv-grotesk"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yiwen Yang - Fashion</title>
+    </head>
+    <body>
+        <header>
+            <div class="skip"><a href="#skipto">Skip to Content</a></div>
+            <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="myLinks">
+                <a class="notcurrent"href="index.html">Home</a>
+                <a class="notcurrent"href="architecture.html">Architecture</a>
+                <a class="notcurrent"href="fashion.html">Fashion</a>
+                <a class="current" href="graphics.html">Graphics</a>
+                <a class="notcurrent"href="aboutme.html">About Me</a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        <main>
+            <div class="intro_grap">
+                <h1>GRAPHICS</h1>
+                <p>This is the gallery of Graphic design that I like. In this website, I divide the design pieces with genres. So there are three categories: Brands, Interfaces and Visuals. </p>
+            </div>
+            <div class="pagelink3" id="skipto">
+                <a href="#brands">Brands</a>
+                <a href="#interfaces">Interfaces</a>
+                <a href="#visuals">Visuals</a>
+            </div>
+            <div id="brands">
+                <h2>Brands</h2>
+                <img id="brandspic1"src="images/poster.jpeg" alt=""/>
+                <div id="brandstext1">
+                    <p>Poster Design - Really love the color and psychedelic effect!</p>
+                </div>
+                <img id="brandspic2"src="images/CD.jpeg" alt=""/>
+                <div id="brandstext2">
+                    <p>Album Cover Design - Album cover design is always my favorite topic to dive into, so hard to choose one.</p>
+                </div>
+                <img id="brandspic3"src="images/package.jpeg" alt=""/>
+                <div id="brandstext3">
+                    <p>Package Design - The pure blue and green color is so comforting!</p>
+                </div>
+            </div>
+            <div id="interfaces">
+                <h2>Interfaces</h2>
+                <img id="interfacespic1"src="images/mobile.jpeg" alt=""/>
+                <div id="interfacestext1">
+                    <p>Mobile Interface Design - Love the gradient color, the shadows of contents make them pop up and create a 3d effect!</p>
+                </div>
+                <img id="interfacespic2"src="images/web.jpeg" alt=""/>
+                <div id="interfacestext2">
+                    <p>Website Interface Design - The color is so fictional yet tempting.</p>
+                </div>
+                <img id="interfacespic3"src="images/wearable.jpeg" alt=""/>
+                <div id="interfacestext3">
+                    <p>Wearable Interface Design - Smaller screens are harder to design, and this one made it.</p>
+                </div>
+            </div>
+            <div id="visuals">
+                <h2>Visuals</h2>
+                <img id="visualspic1"src="images/logo.jpeg" alt=""/>
+                <div id="visualstext1">
+                    <p>Logo Design - Like the motion of RISE! Convey the meaning well.</p>
+                </div>
+                <img id="visualspic2"src="images/illustration.jpeg" alt=""/>
+                <div id="visualstext2">
+                    <p>Illustration Design - Weird but striking and intoxicated.</p>
+                </div>
+                <img id="visualspic3"src="images/typography.jpeg" alt=""/>
+                <div id="visualstext3">
+                    <p>Typography Design - Combining animals to typography design is just cute!</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="name">Yiwen Yang</p>
+            <p id="address">540 Thompson St.</p>
+            <p id="city">Ann Arbor, MI</p>
+            <p id="number">(734)450-5022</p>
+            <p id="email">yiwyang@umich.edu</p>
+        </footer>
+    </body>
+</html>

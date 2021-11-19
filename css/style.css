@@ -1,0 +1,589 @@
+header{
+    width:auto;
+    position: sticky;
+    top:0;
+    background-color: #ffffff;
+    z-index: 1;
+    font-size:30px;
+    padding:10px;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position:absolute;
+    top: -50px;
+}
+
+.skip a:focus{
+    position:absolute;
+    top:20px;
+    color:black;
+    font-size: 25px;
+    font-family:"aktiv-grotesk",'Clarkson',Helvetica,sans-serif;
+    text-decoration: none;
+}
+
+i{
+    color:#202020;
+    display:block;
+    padding:5px 20px 5px 20px;
+}
+
+i:hover{
+    color:#000000;
+}
+
+header #myLinks{
+    display:none;
+}
+
+header a{
+    display:block;
+}
+
+header a .icon{
+    display:block;
+    position:absolute;
+}
+
+.notcurrent{
+    color:#202020;
+    font-size:20px;
+    font-family:"proxima nova","Helvetica Neue",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin:10px;
+    padding:10px;
+}
+
+.current{
+    margin:10px;
+    padding:10px;
+    background-color:#202020;
+    color:white;
+    text-decoration-line: none;
+    font-size:20px;
+    font-family:Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+}
+
+.introduction{
+    height: 800px;
+    background-image: url("../images/IntroPic.jpeg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_arch{
+    height:500px;
+    background-image: url("../images/architecture.jpeg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_fash{
+    height:500px;
+    background-image: url("../images/fashion.jpeg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_grap{
+    height:500px;
+    background-image: url("../images/graphics.jpeg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction p,.intro_fash p,.intro_grap p,.intro_arch p{
+    background-color: rgba(0,0,0,0.8);
+    margin:0;
+    position:relative;
+    width:450px;
+    text-align: center;
+    padding: 0 30px 30px 30px;
+}
+
+h1{
+    background-color: rgba(0,0,0,0.8);
+    margin:0;
+    position:relative;
+    width:450px;
+    font-size: 48px;
+    font-family: "aktiv-grotesk",'Clarkson',Helvetica,sans-serif;
+    color:whitesmoke;
+    padding:30px 0 15px 0;
+    text-align: center;
+}
+
+
+body{
+    background-color: #202020;
+}
+
+p{
+    color:whitesmoke;
+    line-height: 25px;
+    font-family: "aktiv-grotesk",'Clarkson',Helvetica,sans-serif;
+}
+
+h2{
+    color:#ffffff;
+    text-align: center;
+    font-weight:bold;
+    font-family:"aktiv-groteskArial", Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.archpics, .fashpics, .grappics{
+    display: flex;
+    flex-direction: column;
+}
+
+.architecture a, .fashion a, .graphics a{
+    color:rgb(115, 211, 255);
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.architecture img, .fashion img,.graphics img{
+    margin:20px 40px 20px 40px;
+}
+
+.pagelink1,.pagelink2,.pagelink3{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pagelink1 a,.pagelink2 a,.pagelink3 a,.architecture a,.fashion a,.graphics a{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px;
+    text-decoration-line: underline;
+}
+
+#asia,#europe,#america{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 50px 300px 200px 300px 200px 300px 200px;
+}
+
+#asia h2,#europe h2,#america h2{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#asiapic1,#europepic1,#americapic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#asiatext1,#europetext1,#americatext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+}
+
+#asiapic2,#europepic2,#americapic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#asiatext2,#europetext2,#americatext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#asiapic3,#europepic3,#americapic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#asiatext3,#europetext3,#americatext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+#men,#women,#unisex{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 50px 600px 100px 600px 100px 600px 100px;
+}
+
+#men h2,#women h2,#unisex h2{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#menpic1,#womenpic1,#unisexpic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#mentext1,#womentext1,#unisextext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    color:whitesmoke;
+}
+
+#menpic2,#womenpic2,#unisexpic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#mentext2,#womentext2,#unisextext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#menpic3,#womenpic3,#unisexpic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#mentext3,#womentext3,#unisextext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+#brands,#interfaces,#visuals{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+}
+
+#brands{
+    grid-template-rows: 50px 570px 100px 400px 100px 500px 100px;
+}
+
+#interfaces{
+    grid-template-rows: 50px 420px 100px 300px 100px 300px 100px;
+}
+
+#visuals{
+    grid-template-rows: 50px 300px 100px 520px 100px 400px 100px;
+}
+
+#brands h2,#interfaces h2,#visuals h2{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#brandspic1,#interfacespic1,#visualspic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#brandstext1,#interfacestext1,#visualstext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    color:whitesmoke;
+}
+
+#brandspic2,#interfacespic2,#visualspic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#brandstext2,#interfacestext2,#visualstext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#brandspic3,#interfacespic3,#visualspic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#brandstext3,#interfacestext3,#visualstext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+.myprofile img{
+    display:block;
+    width: 75%;
+    margin:30px auto 30px auto;
+    border-radius: 2000px;
+}
+
+.myprofile h1{
+    color:#ffffff;
+    background-color: #202020;
+    width:100%;
+    text-align: center;
+    
+}
+
+.information{
+    display:block;
+    width:75%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.information p{
+    margin-bottom:10px;
+    line-height: 25px;
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    padding:40px;
+    margin-top:30px;
+}
+
+#name,#address,#city,#number,#email{
+    color:#202020;
+    font-family:poppins;
+}
+
+#name{
+    font-size:20px;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+#address,#number{
+    margin-top:20px;
+}
+
+@media screen and (min-width: 700px){
+    .icon{
+        display:none;
+    }
+
+    header #myLinks{
+        display:block;
+    }
+
+    header a{
+        display:inline-block;     
+    }
+
+    .pagelink1,.pagelink2,.pagelink3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #asia,#europe,#america{
+        display:grid;
+        grid-column-gap:10px;
+        grid-row-gap:50px;
+        grid-template-columns: auto 150px 150px 150px 150px auto;
+        grid-template-rows: 20px 352px 352px 352px 30px;
+    }
+
+    #asiapic1,#europepic1,#americapic1{
+        grid-column:2/span 3;
+        grid-row:2/span 1;
+    }
+    
+    #asiatext1,#europetext1,#americatext1{
+        grid-column: 4/span 2;
+        grid-row: 2/span 1;
+        display: flex;
+        height:352px;
+        align-items: center;
+    }
+    
+    #asiapic2,#europepic2,#americapic2{
+        grid-column: 3/span 3;
+        grid-row: 3/span 1;
+    }
+    
+    #asiatext2,#europetext2,#americatext2{
+        grid-column:2/span 2;
+        grid-row: 3/span 1;
+        display: flex;
+        height:352px;
+        align-items: center;
+    }
+    
+    #asiapic3,#europepic3,#americapic3{
+        grid-column: 2/span 3;
+        grid-row: 4/span 1;
+    }
+    
+    #asiatext3,#europetext3,#americatext3{
+        grid-column: 4/span 2;
+        grid-row: 4/span 1;
+        display: flex;
+        height:352px;
+        align-items: center;
+    }
+    
+    #asiatext3 p,#europetext3 p,#americatext3 p,#asiatext1 p, #europetext1 p, #americatext1 p, #asiatext2 p, #europetext2 p, #americatext2 p,#mentext1 p,#womentext1 p,#unisextext1 p,#mentext2 p, #womentext2 p,#unisextext2 p,#mentext3 p,#womentext3 p,#unisextext3 p,#brandstext3 p,#interfacestext3 p,#visualstext3 p,#brandstext1 p,#interfacestext1 p,#visualstext1 p,#brandstext2 p,#interfacestext2 p,#visualstext2 p{
+        background-color: rgba(255,255,255,0.8);   
+        color:black;
+        padding:20px;
+    }
+
+    #men,#women,#unisex{
+        display:grid;
+        grid-column-gap:10px;
+        grid-row-gap:50px;
+        grid-template-columns: auto 150px 150px 150px 150px auto;
+        grid-template-rows: 20px 704px 704px 704px 30px;
+    }
+
+    #menpic1,#womenpic1,#unisexpic1{
+        grid-column:2/span 3;
+        grid-row:2/span 1;
+    }
+    
+    #mentext1,#womentext1,#unisextext1{
+        grid-column: 4/span 2;
+        grid-row: 2/span 1;
+        display: flex;
+        height:704px;
+        align-items: center;
+    }
+    
+    #menpic2,#womenpic2,#unisexpic2{
+        grid-column: 3/span 3;
+        grid-row: 3/span 1;
+    }
+    
+    #mentext2,#womentext2,#unisextext2{
+        grid-column:2/span 2;
+        grid-row: 3/span 1;
+        display: flex;
+        height:704px;
+        align-items: center;
+    }
+    
+    #menpic3,#womenpic3,#unisexpic3{
+        grid-column: 2/span 3;
+        grid-row: 4/span 1;
+    }
+    
+    #mentext3,#womentext3,#unisextext3{
+        grid-column: 4/span 2;
+        grid-row: 4/span 1;
+        display: flex;
+        height:704px;
+        align-items: center;
+    }
+
+    #brands,#interfaces,#visuals{
+        display:grid;
+        grid-column-gap:10px;
+        grid-row-gap:50px;
+        grid-template-columns: auto 150px 150px 150px 150px auto;
+    }
+    
+    #brands{
+        grid-template-rows: 20px 642px 450px 562.5px 30px;
+    }
+    
+    #interfaces{
+        grid-template-rows: 20px 472.5px 337.5px 337.5px 30px;
+    }
+    
+    #visuals{
+        grid-template-rows: 20px 337.5px 585px 450px 30px;
+    }
+
+    #brandspic1,#interfacespic1,#visualspic1{
+        grid-column:2/span 3;
+        grid-row:2/span 1;
+    }
+    
+    #brandstext1,#interfacestext1,#visualstext1{
+        grid-column: 4/span 2;
+        grid-row: 2/span 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    #brandstext1{
+        height:642px;
+    }
+
+    #brandstext2,#visualtext3{
+        height:450px;
+    }
+
+    #brandstext3{
+        height:562.5px;
+    }
+
+    #interfacestext1{
+        height:472.5px;
+    }
+
+    #interfacestext2,#interfacestext3,#visualstext1{
+        height: 337.5px;
+    }
+
+    #visualstext2{
+        height: 585px;
+    }
+
+    #brandspic2,#interfacespic2,#visualspic2{
+        grid-column: 3/span 3;
+        grid-row: 3/span 1;
+    }
+    
+    #brandstext2,#interfacestext2,#visualstext2{
+        grid-column:2/span 2;
+        grid-row: 3/span 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    #brandspic3,#interfacespic3,#visualspic3{
+        grid-column: 2/span 3;
+        grid-row: 4/span 1;
+    }
+    
+    #brandstext3,#interfacestext3,#visualstext3{
+        grid-column: 4/span 2;
+        grid-row: 4/span 1;
+        display: flex;
+        align-items: center;
+    }
+}
